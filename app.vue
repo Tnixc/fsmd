@@ -8,13 +8,13 @@
           <div class="text-gray-500 lg:pl-24">
             <h1
               id="h"
-              class="px-4 relative tracking-widest text-9xl mt-48 block bg-gradient-to-b from-zinc-50 to-slate-400 inline-block text-transparent bg-clip-text"
+              class="md:px-4 relative tracking-widest text-9xl lg:mt-48 block bg-gradient-to-b from-zinc-50 to-slate-400 inline-block text-transparent bg-clip-text"
             >
               FSMD
             </h1>
             <p class="px-4 text-3xl mt-10">Got a thought? <br> <span class="text-slate-200">Share it instantly. </span></p>
             <p class="px-4 text-3xl">
-              Write in <span class="text-slate-200">markdown</span>
+              Write it in <span class="text-slate-200">markdown</span>.
             </p>
             <p class="px-4 text-3xl">No account required.</p>
             <p class="px-4 text-3xl">Free forever.</p>
@@ -28,9 +28,9 @@
               </button>
             </div>
           </div>
-            <p class="px-4 text-xl text-red-400 opacity-50">Documents are deleted after 7 days.</p>
+            <p class="px-4 text-xl text-red-400 opacity-80">Documents are deleted after 7 days.</p>
             <br>
-            <p class="px-4 text-xl text-gray-500">Open source project on <span class="underline decoration-2 underline-offset-4">github</span></p>
+            <p class="px-4 text-xl text-gray-500">Open source project on <a target="_blank" href="https://github.com/Tnixc/fsmd" class="underline decoration-2 underline-offset-4 hover:text-white transition-all">github</a></p>
           </div>
         </div>
       </div>
@@ -48,20 +48,32 @@
 <style>
 @font-face {
   font-family: Geist Mono;
-  font-variation-settings: "wght" 100;
+  font-weight: 100;
   src: url("https://pham.codes/d/GeistMonoVF.woff2");
 }
 
 @font-face {
   font-family: Geist;
-  font-variation-settings: "wght" 100;
+  font-weight: 100;
   src: url("https://pham.codes/d/GeistVF.woff2");
 }
+
+body {
+  font-family: Geist, sans-serif;
+  font-size: 16px;
+  background: black;
+}
+
 #int {
   width: calc(100% - 1px);
 }
 #h {
-  font-variation-settings: "wght" 48;
+  font-variation-settings: "wght" 50;
+  transition: all 1s ease-out;
+}
+#h:hover{
+  font-variation-settings: "wght" 100;
+
 }
 #h::before {
   top: 0;
@@ -90,10 +102,7 @@
   opacity: 1;
   z-index: 0;
 }
-body {
-  font-family: Geist, sans-serif;
-  font-size: 16px;
-}
+
 #x:after{
   content: "";
   position: absolute;
