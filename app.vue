@@ -1,26 +1,26 @@
 <template>
-  <div class="overflow-hidden">
+  <div class="">
     <div class="h-screen fixed inset-0 bg-black -z-50">
       <div
-        class="lg:w-1/2 h-screen bg-gradient-to-b from-zinc-700 overflow-hidden"
+        class="lg:w-1/2 h-screen bg-gradient-to-b from-zinc-700 "
       >
         <div id="int" class="h-full bg-zinc-950 fixed left-0 top-0 right-1/2">
-          <div class="text-gray-500 lg:pl-24 p-5">
+          <div class="text-gray-500 lg:pl-24">
             <h1
               id="h"
-              class="relative tracking-widest text-9xl mt-48 block bg-gradient-to-b from-zinc-50 to-slate-400 inline-block text-transparent bg-clip-text"
+              class="px-4 relative tracking-widest text-9xl mt-48 block bg-gradient-to-b from-zinc-50 to-slate-400 inline-block text-transparent bg-clip-text"
             >
               FSMD
             </h1>
-            <p class="text-3xl mt-10">Share instantly.</p>
-            <p class="text-3xl">
+            <p class="px-4 text-3xl mt-10">Got a thought? <br> <span class="text-slate-200">Share it instantly. </span></p>
+            <p class="px-4 text-3xl">
               Write in <span class="text-slate-200">markdown</span>
             </p>
-            <p class="text-3xl">No account required.</p>
-            <p class="text-3xl">Free forever.</p>
+            <p class="px-4 text-3xl">No account required.</p>
+            <p class="px-4 text-3xl">Free forever.</p>
             <div
               id="sep"
-              class="relative w-full h-0.5 bg-gradient-to-l from-zinc-50 to-slate-400/0 my-20"
+              class="px-4 relative w-full h-0.5 bg-gradient-to-l from-zinc-50 to-slate-400/0 my-20"
             >
             <div class="bg-gradient-to-b from-zinc-50 to-slate-400 text-2xl p-0.5 shadow-2xl hover:shadow-xl transition-all text-zinc-50 absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 fixed lg:hidden">
               <button class="h-full w-full bg-slate-950 p-5 px-16">
@@ -28,7 +28,9 @@
               </button>
             </div>
           </div>
-            <p class="text-xl">Documents are deleted after 7 days.</p>
+            <p class="px-4 text-xl text-red-400 opacity-50">Documents are deleted after 7 days.</p>
+            <br>
+            <p class="px-4 text-xl text-gray-500">Open source project on <span class="underline decoration-2 underline-offset-4">github</span></p>
           </div>
         </div>
       </div>
