@@ -17,18 +17,29 @@
               Write in <span class="text-slate-200">markdown</span>
             </p>
             <p class="text-3xl">No account required.</p>
-            <p class="text-3xl">Free forever</p>
+            <p class="text-3xl">Free forever.</p>
             <div
               id="sep"
               class="relative w-full h-0.5 bg-gradient-to-l from-zinc-50 to-slate-400/0 my-20"
-            ></div>
+            >
+            <div class="bg-gradient-to-b from-zinc-50 to-slate-400 text-2xl p-0.5 shadow-2xl hover:shadow-xl transition-all text-zinc-50 absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 fixed lg:hidden">
+              <button class="h-full w-full bg-slate-950 p-5 px-16">
+                New Document
+              </button>
+            </div>
+          </div>
             <p class="text-xl">Documents are deleted after 7 days.</p>
           </div>
         </div>
       </div>
     </div>
-    <div class="lg:w-1/2 lg:fixed right-10 top-1/2 -translate-y-1/2 -z-30" id="x">
+    <div class="lg:fixed lg:right-10 lg:top-1/2 lg:left-1/2 lg:-translate-y-1/2 lg:-z-30 lg:shadow-xl -translate-y-2/3" id="x">
       <img src="~assets/bg.svg"/>
+      <div class="bg-gradient-to-b from-zinc-50 to-slate-400 text-2xl p-0.5 shadow-2xl hover:shadow-xl transition-all text-zinc-50 absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 fixed z-[1000]">
+        <button class="h-full w-full bg-slate-950 p-5 px-16">
+          New Document
+        </button>
+      </div>
     </div>
   </div>
 </template>
@@ -73,14 +84,7 @@
   position: absolute;
   left: 0%;
   right: -100%;
-  background: linear-gradient(
-    73deg,
-    rgba(13, 82, 222, 0.6) 0%,
-    rgba(10, 209, 186, 0.3) 25%,
-    rgba(33, 193, 235, 0.6) 50%,
-    rgba(196, 68, 255, 0.3) 75%,
-    rgba(234, 197, 229, 0.6) 100%
-  );
+  background: linear-gradient(90deg, #EFF4FA, transparent);
   opacity: 1;
   z-index: 0;
 }
@@ -95,7 +99,7 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(180deg, #D7D3D2, transparent);
+  background: linear-gradient(180deg, #EFF4FA, transparent);
   z-index: 998;
 }
 #x:before{
