@@ -1,4 +1,5 @@
 <template>
+  <div class="fixed lg:block hidden bg-gradient-to-b from-slate-900 shadow-2xl z-[9999] via-white h-screen top-0 right-1/2 w-1"></div>
   <div class="h-screen fixed inset-0 bg-black -z-50">
     <div
       id="int"
@@ -20,6 +21,8 @@
         </p>
         <p class="px-4 text-3xl">No account required.</p>
         <p class="px-4 text-3xl">Free forever.</p>
+        <br>
+        <a href="" class="px-4 text-3xl text-teal-400/80 transition-all hover:text-teal-300 underline underline-offset-4 decoration-4">How it works</a>
         <div
           id="sep"
           class="px-4 relative w-full h-0.5 bg-gradient-to-l from-zinc-50 to-slate-400/0 my-20"
@@ -32,8 +35,13 @@
             </button>
           </div>
         </div>
-        <p class="px-4 text-xl text-red-400 opacity-80">
-          Documents are deleted after 7 days.
+        <p class="px-4 text-xl text-red-400">
+          Documents are deleted after 7 days of inactivity. <a
+          target="_blank"
+          href="https://github.com/Tnixc/fsmd"
+          class="underline decoration-2 underline-offset-4 hover:text-blue-300 transition-all text-blue-400/50"
+          >Policy</a
+        >
         </p>
         <br />
         <p class="px-4 text-xl text-gray-500">
@@ -41,9 +49,14 @@
           <a
             target="_blank"
             href="https://github.com/Tnixc/fsmd"
-            class="underline decoration-2 underline-offset-4 hover:text-white transition-all"
-            >github</a
-          >
+            class="underline decoration-2 underline-offset-4 hover:text-blue-300 text-blue-400/50 transition-all"
+            >Github</a
+          > by <a
+          target="_blank"
+          href="https://tnixc.space"
+          class="underline decoration-2 underline-offset-4 hover:text-blue-300 text-blue-400/50 transition-all"
+          >Tnixc</a
+        >
         </p>
       </div>
     </div>
