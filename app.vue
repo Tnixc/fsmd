@@ -28,7 +28,7 @@
       </div>
     </div>
     <div class="lg:w-1/2 lg:fixed right-10 top-1/2 -translate-y-1/2 -z-30" id="x">
-      <img :src="svg" />
+      <img src="~assets/bg.svg"/>
     </div>
   </div>
 </template>
