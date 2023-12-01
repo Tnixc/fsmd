@@ -32,11 +32,10 @@
           </div>
         </div>
         <p class="px-4 text-xl text-red-400">
-          Documents are deleted after 7 days of inactivity. <a
-          target="_blank"
-          href="https://github.com/Tnixc/fsmd"
+          Documents are deleted after 7 days of inactivity. <NuxtLink
+          to="/policy"
           class="underline decoration-2 underline-offset-4 hover:text-blue-300 transition-all text-blue-400/50"
-          >Policy</a
+          >Policy</NuxtLink
         >
         </p>
         <br />
@@ -68,24 +67,8 @@
     </div>
   </div>
 </template>
-<style>
-@font-face {
-  font-family: Geist Mono;
-  font-weight: 100;
-  src: url("https://pham.codes/d/GeistMonoVF.woff2");
-}
+<style scoped>
 
-@font-face {
-  font-family: Geist;
-  font-weight: 100;
-  src: url("https://pham.codes/d/GeistVF.woff2");
-}
-
-body {
-  font-family: Geist, sans-serif;
-  font-size: 16px;
-  background: black;
-}
 
 #int {
   width: calc(100% - 1px);
@@ -170,8 +153,4 @@ body {
 }
 </style>
 
-<script>
-export default {
-  name: "App",
-};
-</script>
+
