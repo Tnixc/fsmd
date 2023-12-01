@@ -1,10 +1,6 @@
 <template>
   <div class="fixed lg:block hidden bg-gradient-to-b from-slate-900 shadow-2xl z-[9999] via-white h-screen top-0 right-1/2 w-1"></div>
   <div class="h-screen fixed inset-0 bg-black -z-50">
-    <div
-      id="int"
-      class="h-full bg-zinc-950 fixed left-0 right-1/2 bg-slate-500/20"
-    >
       <div class="text-gray-500 lg:pl-24">
         <h1
           id="h"
@@ -60,7 +56,6 @@
         </p>
       </div>
     </div>
-  </div>
   <div
     class="lg:fixed lg:right-10 lg:top-1/2 lg:left-1/2 lg:-translate-y-1/2 lg:-z-30 lg:shadow-xl hidden lg:block "
     id="x"
@@ -104,7 +99,7 @@ body {
 }
 #h::before {
   top: 0;
-  bottom: -30%;
+  bottom: -0.25rem;
   content: "";
   position: absolute;
   left: -100%;
@@ -120,7 +115,7 @@ body {
 }
 #h::after {
   top: 100%;
-  bottom: -10%;
+  bottom: -0.25rem;
   content: "";
   position: absolute;
   left: 0%;
