@@ -28,11 +28,11 @@
           class="px-4 relative w-full h-0.5 bg-gradient-to-l from-zinc-50 to-slate-400/0 my-20"
         >
           <div
-            class="bg-gradient-to-b from-zinc-50 to-slate-400 text-2xl p-0.5 shadow-2xl hover:shadow-xl transition-all text-zinc-50 absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 fixed lg:hidden"
+            class="bg-gradient-to-b from-teal-300 to-blue-300 text-2xl p-0.5 shadow-2xl hover:shadow-xl transition-all text-zinc-50 absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 fixed lg:hidden"
           >
-            <button class="h-full w-full bg-slate-950 p-5 px-16">
+            <a class=" text-center h-full w-full bg-slate-950 p-5 px-16 block" href="https://github.com">
               New Document
-            </button>
+            </a>
           </div>
         </div>
         <p class="px-4 text-xl text-red-400">
@@ -62,14 +62,14 @@
     </div>
   </div>
   <div
-    class="lg:fixed lg:right-10 lg:top-1/2 lg:left-1/2 lg:-translate-y-1/2 lg:-z-30 lg:shadow-xl -translate-y-2/3"
+    class="lg:fixed lg:right-10 lg:top-1/2 lg:left-1/2 lg:-translate-y-1/2 lg:-z-30 lg:shadow-xl hidden lg:block "
     id="x"
   >
     <img src="~assets/bg.svg" />
     <div
-      class="bg-gradient-to-b from-zinc-50 to-slate-400 text-2xl p-0.5 shadow-2xl hover:shadow-xl transition-all text-zinc-50 absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 fixed z-[1000]"
+      class="bg-gradient-to-b from-teal-300 to-blue-300 text-2xl p-0.5 shadow-2xl hover:shadow-xl transition-all text-zinc-50 absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 fixed z-[1000]"
     >
-      <button class="h-full w-full bg-slate-950 p-5 px-16">New Document</button>
+      <a class="h-full w-full bg-slate-950 p-5 px-16 block text-center " href="https://github.com">New Document</a>
     </div>
   </div>
 </template>
