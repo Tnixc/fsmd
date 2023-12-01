@@ -22,7 +22,7 @@
         <p class="px-4 text-3xl">No account required.</p>
         <p class="px-4 text-3xl">Free forever.</p>
         <br>
-        <a href="" class="px-4 text-3xl text-teal-400/80 transition-all hover:text-teal-300 underline underline-offset-4 decoration-4">How it works</a>
+        <a href="" class="px-4 text-3xl text-teal-400/70 transition-all hover:text-teal-300 underline underline-offset-4 decoration-4">How it works</a>
         <div
           id="sep"
           class="px-4 relative w-full h-0.5 bg-gradient-to-l from-zinc-50 to-slate-400/0 my-20"
