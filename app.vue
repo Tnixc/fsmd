@@ -1,5 +1,5 @@
 <template>
-  <div class="fixed lg:block hidden bg-gradient-to-b from-slate-900 shadow-2xl z-[9999] via-white h-screen top-0 right-1/2 w-1"></div>
+  <div id="vertsep" class="fixed lg:block hidden z-[10000] h-screen top-1/6 left-1/2 w-1"></div>
   <div class="h-screen fixed inset-0 bg-black -z-50">
       <div class="text-gray-500 lg:pl-24">
         <h1
@@ -150,6 +150,23 @@ body {
     transparent 6px
   );
   z-index: 999;
+}
+#vertsep {
+  background: linear-gradient(180deg, transparent, #92C6FD, transparent, #23d5ab, transparent, #92C6FD, transparent);
+  box-shadow: 5px 0 20px black;
+	animation: shift-bg 10s linear infinite;
+  background-size: 100% 200vh;
+  opacity: 100%;
+  mix-blend-mode: multiply;
+}
+@keyframes shift-bg {
+  0% {
+		background-position: left 0% ;
+	}
+	100% {
+		background-position: left 200vh;
+	}
+
 }
 </style>
 
