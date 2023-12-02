@@ -1,6 +1,6 @@
 # Policy and Info
 
-> [!important]
+> [!IMPORTANT]
 >
 > 1. Anyone with access to your document’s url has read and write access
 > 2. If you lose the url to your document permanently , there is no way to get the back.
