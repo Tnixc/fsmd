@@ -1,10 +1,10 @@
 <template>
   <div
     id="vertsep"
-    class="top-1/6 fixed left-1/2 z-[10000] hidden h-screen w-1 lg:block"
+    class="top-1/6 absolute left-1/2 z-[10000] hidden h-screen w-1 lg:block"
   ></div>
-  <div class="fixed inset-0 -z-50 h-screen bg-black">
-    <div class="text-gray-500 lg:pl-24">
+  <div class="absolute inset-0 -z-50 h-screen">
+    <div class="pr-0 text-gray-500 lg:pl-24">
       <div
         id="h"
         class="relative block bg-gradient-to-b from-zinc-50 to-slate-400 bg-clip-text text-9xl tracking-widest text-transparent md:px-4 lg:mt-48"
@@ -35,17 +35,17 @@
         class="relative my-20 h-0.5 w-full bg-gradient-to-l from-zinc-50 to-slate-400/0 px-4"
       >
         <div
-          class="fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-gradient-to-b from-teal-300 to-blue-300 p-0.5 text-2xl text-zinc-50 shadow-2xl transition-all hover:shadow-xl lg:hidden"
+          class="ml-auto mr-0 w-fit translate-y-1/2 bg-gradient-to-b from-teal-300 to-blue-300 p-0.5 text-2xl text-zinc-50 shadow-2xl transition-all hover:shadow-xl lg:hidden"
         >
           <a
-            class="block h-full w-full bg-slate-950 p-5 px-16 text-center"
+            class="block h-full w-full whitespace-nowrap bg-slate-950 p-5 px-16 text-center"
             href="https://github.com"
           >
             New Document
           </a>
         </div>
       </div>
-      <div class="px-4 text-xl text-red-400">
+      <div class="px-4 pt-20 text-xl text-red-400 lg:pt-4">
         Documents are deleted after 14 days of inactivity.
       </div>
       <br />
@@ -68,15 +68,15 @@
     </div>
   </div>
   <div
-    class="hidden lg:fixed lg:left-1/2 lg:right-10 lg:top-1/2 lg:-z-30 lg:block lg:-translate-y-1/2 lg:shadow-xl"
+    class="hidden lg:absolute lg:left-1/2 lg:right-10 lg:top-1/2 lg:-z-30 lg:block lg:-translate-y-1/2 lg:shadow-xl"
     id="x"
   >
     <img src="~assets/bg.svg" />
     <div
-      class="fixed left-1/2 top-1/2 z-[1000] -translate-x-1/2 -translate-y-1/2 bg-gradient-to-b from-teal-300 to-blue-300 p-0.5 text-2xl text-zinc-50 shadow-2xl transition-all hover:shadow-xl"
+      class="absolute left-1/2 top-1/2 z-[1000] -translate-x-1/2 -translate-y-1/2 bg-gradient-to-b from-teal-300 to-blue-300 p-0.5 text-2xl text-zinc-50 shadow-2xl transition-all hover:shadow-xl"
     >
       <a
-        class="block h-full w-full bg-slate-950 p-5 px-16 text-center"
+        class="block h-full w-full whitespace-pre bg-slate-950 p-5 px-16 text-center"
         href="https://github.com"
         >New Document</a
       >
@@ -96,12 +96,11 @@
 }
 #h::before {
   top: 0;
-  bottom: -0.25rem;
   content: "";
   position: absolute;
-  left: -100%;
-  right: -100%;
+  inset: 0;
   z-index: 1;
+  bottom: -0.25rem;
   background: repeating-linear-gradient(
     45deg,
     #00000020,
@@ -109,6 +108,7 @@
     transparent 1px,
     transparent 4px
   );
+  max-width: 90vw;
 }
 #h::after {
   top: 100%;
@@ -119,6 +119,7 @@
   right: -100%;
   background: linear-gradient(90deg, #eff4fa, transparent);
   opacity: 1;
+  max-width: 90vw;
   z-index: 0;
 }
 

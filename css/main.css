@@ -21,8 +21,10 @@ code {
     Geist Mono,
     monospace;
 }
-* {
-  @apply transition-all;
+*,
+*::before,
+*::after {
+  @apply max-w-[100vw] transition-all;
 }
 ::selection {
   @apply bg-teal-200 text-black;
