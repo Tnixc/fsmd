@@ -24,9 +24,9 @@
       <nuxt-link
         to="/policy"
         class="px-4 text-3xl text-teal-400/70 transition-all hover:text-teal-300 underline underline-offset-8 decoration-4"
-      >
-        Policy and info</nuxt-link
-      >
+        >Policy and info
+        <Icon name="uil:github" color="currentColor" />
+      </nuxt-link>
       <div
         id="sep"
         class="px-4 relative w-full h-0.5 bg-gradient-to-l from-zinc-50 to-slate-400/0 my-20"
