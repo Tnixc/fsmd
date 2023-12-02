@@ -24,3 +24,6 @@ code {
 * {
   @apply transition-all;
 }
+::selection {
+  @apply bg-teal-200 text-black;
+}
