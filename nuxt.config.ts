@@ -5,5 +5,5 @@ export default defineNuxtConfig({
   css: ["@/css/main.css"],
   colorMode: {
     classSuffix: ''
-  }
+  },
 });
