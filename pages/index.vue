@@ -25,7 +25,10 @@
         to="/policy"
         class="px-4 text-3xl text-teal-400/70 transition-all hover:text-teal-300 underline underline-offset-8 decoration-4"
         >Policy and info
-        <Icon name="uil:github" color="currentColor" />
+        <Icon
+          name="material-symbols:arrow-outward-rounded"
+          color="currentColor"
+        />
       </nuxt-link>
       <div
         id="sep"
