@@ -1,6 +1,9 @@
 <script scoped>
 import "@/css/markdown.css";
-import { marked } from "marked";
+import hljs from "highlight.js";
+import { markedHighlight } from "marked-highlight";
+import markedAlert from "marked-alert";
+import { Marked } from "marked";
 export default {
   data() {
     return {
@@ -8,12 +11,21 @@ export default {
     };
   },
   mounted() {
+    const marked = new Marked(
+      markedHighlight({
+        langPrefix: "hljs language-",
+        highlight(code, lang) {
+          const language = hljs.getLanguage(lang) ? lang : "plaintext";
+          return hljs.highlight(code, { language }).value;
+        },
+      }),
+    );
     fetch(
       "https://gist.githubusercontent.com/rt2zz/e0a1d6ab2682d2c47746950b84c0b6ee/raw/83b8b4814c3417111b9b9bef86a552608506603e/markdown-sample.md",
     )
       .then((res) => res.text())
       .then((res) => {
-        this.content = marked.use().parse(
+        this.content = marked.use(markedAlert()).parse(
           `
 # Markdown Sample
 
@@ -47,8 +59,20 @@ This is an ordered list:
 
 this is a GFC note
 > [!NOTE]
->
-> this is a note
+> Highlights information that users should take into account, even when skimming.
+
+> [!TIP]
+> Optional information to help a user be more successful.
+
+> [!IMPORTANT]
+> Crucial information necessary for users to succeed.
+
+> [!WARNING]
+> Critical content demanding immediate user attention due to potential risks.
+
+> [!CAUTION]
+> Negative potential consequences of an action.
+
 
 
 
