@@ -6,15 +6,13 @@ img {
     Consolas, "Liberation Mono", "Courier New", monospace;
 } */
 body {
-  background-color: #fff;
-  color: rgba(0, 0, 0, 0.8);
+  @apply text-black;
 }
-.dark-mode body {
-  background-color: #091a28;
-  color: #ebf4f1;
+.dark body {
+  @apply text-white;
 }
 h1:first-of-type {
-  @apply mb-8 mt-0 text-5xl font-bold;
+  @apply mt-0 text-5xl font-bold;
 }
 h2 {
   @apply mb-1 mt-6 text-4xl font-bold;
@@ -32,5 +30,20 @@ h6 {
   @apply mb-1 mt-6 text-lg font-bold;
 }
 p {
-  @apply my-2;
+  @apply my-2 text-zinc-700 dark:text-zinc-300;
+}
+li {
+  @apply my-2 ml-4 text-zinc-700 dark:text-zinc-300;
+}
+bold,
+strong,
+i,
+em {
+  @apply text-zinc-900 dark:text-zinc-100;
+}
+ol li {
+  @apply list-decimal;
+}
+ul li {
+  @apply list-disc;
 }
