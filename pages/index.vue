@@ -25,7 +25,7 @@
         to="/policy"
         class="px-4 text-3xl text-teal-400/70 transition-all hover:text-teal-300 underline underline-offset-8 decoration-4"
       >
-        Policy</nuxt-link
+        Policy and info</nuxt-link
       >
       <div
         id="sep"
@@ -43,7 +43,7 @@
         </div>
       </div>
       <p class="px-4 text-xl text-red-400">
-        Documents are deleted after 7 days of inactivity.
+        Documents are deleted after 14 days of inactivity.
       </p>
       <br />
       <p class="px-4 text-xl text-gray-500">
