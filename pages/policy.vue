@@ -10,7 +10,7 @@ export default {
   mounted() {
     marked.use(["marked-alert"]);
     fetch(
-      "https://gist.githubusercontent.com/rt2zz/e0a1d6ab2682d2c47746950b84c0b6ee/raw/83b8b4814c3417111b9b9bef86a552608506603e/markdown-sample.md"
+      "https://gist.githubusercontent.com/rt2zz/e0a1d6ab2682d2c47746950b84c0b6ee/raw/83b8b4814c3417111b9b9bef86a552608506603e/markdown-sample.md",
     )
       .then((res) => res.text())
       .then((res) => {
@@ -60,7 +60,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl ege
 
 
         `,
-          ["gfm", "breaks"]
+          ["gfm", "breaks"],
         );
       });
   },
@@ -68,9 +68,15 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl ege
 </script>
 
 <template>
-  <div class="text-white flex justify-center pt-20 bg-gray-100">
+  <h1>Color mode: {{ $colorMode.value }}</h1>
+  <select v-model="$colorMode.preference">
+    <option value="system">System</option>
+    <option value="light">Light</option>
+    <option value="dark">Dark</option>
+  </select>
+  <div class="flex justify-center bg-neutral-300 pt-20 text-black">
     <article
-      class="max-w-4xl bg-neutral-800 rounded-xl ring-2 ring-neutral-700 p-10 overflow-hidden mb-40"
+      class="mb-40 max-w-4xl overflow-hidden rounded-xl bg-neutral-100 p-10 shadow-xl ring-2 ring-neutral-200"
     >
       <div v-html="content"></div>
     </article>

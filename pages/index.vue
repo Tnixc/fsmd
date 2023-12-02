@@ -1,17 +1,17 @@
 <template>
   <div
     id="vertsep"
-    class="fixed lg:block hidden z-[10000] h-screen top-1/6 left-1/2 w-1"
+    class="top-1/6 fixed left-1/2 z-[10000] hidden h-screen w-1 lg:block"
   ></div>
-  <div class="h-screen fixed inset-0 bg-black -z-50">
+  <div class="fixed inset-0 -z-50 h-screen bg-black">
     <div class="text-gray-500 lg:pl-24">
       <div
         id="h"
-        class="md:px-4 relative tracking-widest text-9xl lg:mt-48 block bg-gradient-to-b from-zinc-50 to-slate-400 text-transparent bg-clip-text"
+        class="relative block bg-gradient-to-b from-zinc-50 to-slate-400 bg-clip-text text-9xl tracking-widest text-transparent md:px-4 lg:mt-48"
       >
         FSMD
       </div>
-      <div class="px-4 text-3xl mt-10">
+      <div class="mt-10 px-4 text-3xl">
         Got a thought? <br />
         <span class="text-slate-200">Share it instantly. </span>
       </div>
@@ -23,7 +23,7 @@
       <br />
       <nuxt-link
         to="/policy"
-        class="px-4 text-3xl text-teal-400/70 transition-all hover:text-teal-300 underline underline-offset-8 decoration-4"
+        class="px-4 text-3xl text-teal-400/70 underline decoration-4 underline-offset-8 transition-all hover:text-teal-300"
         >Policy and info
         <Icon
           name="material-symbols:arrow-outward-rounded"
@@ -32,13 +32,13 @@
       </nuxt-link>
       <div
         id="sep"
-        class="px-4 relative w-full h-0.5 bg-gradient-to-l from-zinc-50 to-slate-400/0 my-20"
+        class="relative my-20 h-0.5 w-full bg-gradient-to-l from-zinc-50 to-slate-400/0 px-4"
       >
         <div
-          class="bg-gradient-to-b from-teal-300 to-blue-300 text-2xl p-0.5 shadow-2xl hover:shadow-xl transition-all text-zinc-50 top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 fixed lg:hidden"
+          class="fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-gradient-to-b from-teal-300 to-blue-300 p-0.5 text-2xl text-zinc-50 shadow-2xl transition-all hover:shadow-xl lg:hidden"
         >
           <a
-            class="text-center h-full w-full bg-slate-950 p-5 px-16 block"
+            class="block h-full w-full bg-slate-950 p-5 px-16 text-center"
             href="https://github.com"
           >
             New Document
@@ -54,29 +54,29 @@
         <a
           target="_blank"
           href="https://github.com/Tnixc/fsmd"
-          class="underline decoration-2 underline-offset-4 hover:text-blue-300 text-blue-400/50 transition-all"
+          class="text-blue-400/50 underline decoration-2 underline-offset-4 transition-all hover:text-blue-300"
           >Github</a
         >
         by
         <a
           target="_blank"
           href="https://tnixc.space"
-          class="underline decoration-2 underline-offset-4 hover:text-blue-300 text-blue-400/50 transition-all"
+          class="text-blue-400/50 underline decoration-2 underline-offset-4 transition-all hover:text-blue-300"
           >Tnixc</a
         >
       </div>
     </div>
   </div>
   <div
-    class="lg:fixed lg:right-10 lg:top-1/2 lg:left-1/2 lg:-translate-y-1/2 lg:-z-30 lg:shadow-xl hidden lg:block"
+    class="hidden lg:fixed lg:left-1/2 lg:right-10 lg:top-1/2 lg:-z-30 lg:block lg:-translate-y-1/2 lg:shadow-xl"
     id="x"
   >
     <img src="~assets/bg.svg" />
     <div
-      class="bg-gradient-to-b from-teal-300 to-blue-300 text-2xl p-0.5 shadow-2xl hover:shadow-xl transition-all text-zinc-50 top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 fixed z-[1000]"
+      class="fixed left-1/2 top-1/2 z-[1000] -translate-x-1/2 -translate-y-1/2 bg-gradient-to-b from-teal-300 to-blue-300 p-0.5 text-2xl text-zinc-50 shadow-2xl transition-all hover:shadow-xl"
     >
       <a
-        class="h-full w-full bg-slate-950 p-5 px-16 block text-center"
+        class="block h-full w-full bg-slate-950 p-5 px-16 text-center"
         href="https://github.com"
         >New Document</a
       >
