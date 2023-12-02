@@ -11,9 +11,15 @@ import { Marked } from "marked";
 export default {
   data() {
     return {
-      content: "",
-      raw: " ",
-      plain: " ",
+      content: `<style>@font-face {
+  font-family: 'Flow Circular';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/flowcircular/v11/lJwB-pc4j2F-H8YKuyvfxdZ41iDjWA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}</style></p></p><h1>The Importance of S</h1> <p>As the world grapples with the challenges of climate change, it's becoming increasingly clear that sustainable living is not just a buzzword, but a necessity. The way we live our lives has a significant impact on the environment, and it's up to us to make conscious choices that reduce our carbon footprint and promote sustainability.</p> <h2>What is sustainable living?</h2> <p>Sustainable living refers to a lifestyle that minimizes the use of Earth's resources and minimizes the negative impact on the environment. It involves making conscious choices about the way we live, work, and consume, with the goal of reducing our ecological footprint and promoting environmental sustainability.</p> <h2>Why is sustainable living important?</h2> <p>The importance of sustainable living cannot be overstated. The Earth's resources are finite, and our current rate of consumption is unsustainable. If we continue to live in a way that depletes natural resources and pollutes the environment, we risk irreversible damage to the planet and its ecosystems. Sustainable living is important for the health of the planet, but also for our own health and well-being.</p> <h2>Ways to live sustainably</h2> <p>There are many ways to live sustainably, and they all start with making small changes to our daily habits. Here are some examples:</p> <ul> <li>Reducing energy consumption: Simple actions like turning off lights and electronics when not in use, using energy-efficient light bulbs, and adjusting thermostat settings can make a big difference in reducing energy consumption.</li> <li>Conserving water: Taking shorter showers, fixing leaks, and using water-efficient appliances can help conserve water and reduce wastewater.</li> <li>Reducing waste: Recycling, composting, and avoiding single-use plastics can significantly reduce the amount of waste that ends up in landfills and oceans.</li> <li>Using public transportation or biking: Using public transportation, biking, or walking instead of driving can reduce greenhouse gas emissions and improve air quality.</li> <li>Buying sustainable products: Choosing products made from sustainable materials, buying in bulk, and avoiding products with excess packaging can help reduce waste and support sustainable practices.</li> </ul> <h2>Benefits of sustainable living</h2> <p>Living sustainably not only benefits the environment, but also our own health and well-being. Here are some of the benefits of sustainable living:</p> <ul> <li>Improved health: Reducing pollution and waste can improve air and water quality, which can lead to better health outcomes.</li> <li>Cost savings: Sustainable practices like reducing energy consumption and conserving water can save money on utility bills.</li> <li>Increased well-being: Living in harmony with nature and doing our part to protect the environment can lead to increased feelings of well-being and happiness.</li> <li>Community engagement: Sustainable living often involves community engagement, such as participating in local recycling programs or community gardens, which can foster a sense of community and connection.</li> </ul> <h2>Conclusion</h2> <p>Sustainable living is not just a trend or a buzzword, it's a necessity. The way we live our lives has a significant impact on the environment, and it's up to us to make conscious choices that reduce our carbon footprint and promote sustainability. By making small changes to our daily habits, we can live healthier, happier, and more sustainably. Let's work together to create a better future for ourselves and for future generations.</p>`,
+      raw: "",
+      plain: "",
     };
   },
   mounted() {
@@ -26,6 +32,8 @@ export default {
         },
       }),
     );
+    this.content = marked.parse("# Hello World", ["gfm", "breaks"]);
+    document.getElementById("content").classList.remove("holding");
   },
   methods: {
     copyContent() {
@@ -108,7 +116,7 @@ export default {
       <article
         class="mb-20 min-h-screen w-full max-w-4xl rounded-xl bg-neutral-100 p-4 shadow-xl ring-2 ring-neutral-200 dark:bg-neutral-800 dark:ring-neutral-700 lg:p-10"
       >
-        <div v-html="content"></div>
+        <div v-html="content" class="holding" id="content"></div>
       </article>
     </div>
   </div>
