@@ -1,13 +1,14 @@
-
 <template>
   <div
     id="vertsep"
-    class="fixed lg:block hidden z-[10000] h-screen top-1/6 left-1/2 w-1"></div>
+    class="fixed lg:block hidden z-[10000] h-screen top-1/6 left-1/2 w-1"
+  ></div>
   <div class="h-screen fixed inset-0 bg-black -z-50">
     <div class="text-gray-500 lg:pl-24">
       <h1
         id="h"
-        class="md:px-4 relative tracking-widest text-9xl lg:mt-48 block bg-gradient-to-b from-zinc-50 to-slate-400 inline-block text-transparent bg-clip-text">
+        class="md:px-4 relative tracking-widest text-9xl lg:mt-48 block bg-gradient-to-b from-zinc-50 to-slate-400 inline-block text-transparent bg-clip-text"
+      >
         FSMD
       </h1>
       <p class="px-4 text-3xl mt-10">
@@ -20,30 +21,29 @@
       <p class="px-4 text-3xl">No account required.</p>
       <p class="px-4 text-3xl">Free forever.</p>
       <br />
-      <a
-        href=""
-        class="px-4 text-3xl text-teal-400/70 transition-all hover:text-teal-300 underline underline-offset-4 decoration-4"
-        >How it works</a
+      <nuxt-link
+        to="/policy"
+        class="px-4 text-3xl text-teal-400/70 transition-all hover:text-teal-300 underline underline-offset-8 decoration-4"
+      >
+        Policy</nuxt-link
       >
       <div
         id="sep"
-        class="px-4 relative w-full h-0.5 bg-gradient-to-l from-zinc-50 to-slate-400/0 my-20">
+        class="px-4 relative w-full h-0.5 bg-gradient-to-l from-zinc-50 to-slate-400/0 my-20"
+      >
         <div
-          class="bg-gradient-to-b from-teal-300 to-blue-300 text-2xl p-0.5 shadow-2xl hover:shadow-xl transition-all text-zinc-50 absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 fixed lg:hidden">
+          class="bg-gradient-to-b from-teal-300 to-blue-300 text-2xl p-0.5 shadow-2xl hover:shadow-xl transition-all text-zinc-50 absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 fixed lg:hidden"
+        >
           <a
             class="text-center h-full w-full bg-slate-950 p-5 px-16 block"
-            href="https://github.com">
+            href="https://github.com"
+          >
             New Document
           </a>
         </div>
       </div>
       <p class="px-4 text-xl text-red-400">
         Documents are deleted after 7 days of inactivity.
-        <NuxtLink
-          to="/policy"
-          class="underline decoration-2 underline-offset-4 hover:text-blue-300 transition-all text-blue-400/50"
-          >Policy</NuxtLink
-        >
       </p>
       <br />
       <p class="px-4 text-xl text-gray-500">
@@ -66,10 +66,12 @@
   </div>
   <div
     class="lg:fixed lg:right-10 lg:top-1/2 lg:left-1/2 lg:-translate-y-1/2 lg:-z-30 lg:shadow-xl hidden lg:block"
-    id="x">
+    id="x"
+  >
     <img src="~assets/bg.svg" />
     <div
-      class="bg-gradient-to-b from-teal-300 to-blue-300 text-2xl p-0.5 shadow-2xl hover:shadow-xl transition-all text-zinc-50 absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 fixed z-[1000]">
+      class="bg-gradient-to-b from-teal-300 to-blue-300 text-2xl p-0.5 shadow-2xl hover:shadow-xl transition-all text-zinc-50 absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 fixed z-[1000]"
+    >
       <a
         class="h-full w-full bg-slate-950 p-5 px-16 block text-center"
         href="https://github.com"
