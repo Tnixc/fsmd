@@ -1,4 +1,4 @@
-# Policy
+# Policy and Info
 
 Here are some things you should be aware of:
 
