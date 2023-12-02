@@ -13,7 +13,7 @@
       </div>
       <div class="mt-10 px-4 text-3xl">
         Got a thought? <br />
-        <span class="text-slate-200">Share it instantly. </span>
+        <span class="text-slate-200">Collaborate instantly. </span>
       </div>
       <div class="px-4 text-3xl">
         Write it in <span class="text-slate-200">markdown</span>.
