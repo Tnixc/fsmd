@@ -26,17 +26,6 @@ export default {
         },
       }),
     );
-    fetch(
-      "https://raw.githubusercontent.com/Tnixc/fsmd/main/assets/contents/policy.md",
-    )
-      .then((res) => res.text())
-      .then((res) => {
-        this.raw = res;
-        this.content = marked
-          .use(markedAlert(), markedFootnote())
-          .parse(res, ["gfm", "breaks"]);
-        this.plain = this.content.replace(/<[^>]+>/g, "");
-      });
   },
   methods: {
     copyContent() {

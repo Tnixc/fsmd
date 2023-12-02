@@ -24,3 +24,7 @@
 ## Use cases.
 
 Sometimes you just want to edit a doc together with someone to dump ideas or share code, but you don’t want to make a google doc or a github gist because then you need to both log in for that, and you don’t want to clutter up your drive with documents you’ll only use once or twice. FSMD allows you to share and collaborate instantly. Once your brain dump is done you can copy and paste it into a github gist or any other service.
+
+# Todo
+
+- [] Add support for images
