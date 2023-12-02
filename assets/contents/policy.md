@@ -28,3 +28,7 @@ Sometimes you just want to edit a doc together with someone to dump ideas or sha
 # Todo
 
 - Add support for images
+
+# Contact
+
+You can find me at `Tnixc` on discord and [github](https://github.com/Tnxic). My website is https://tnixc.space.
