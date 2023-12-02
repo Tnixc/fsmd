@@ -27,4 +27,4 @@ Sometimes you just want to edit a doc together with someone to dump ideas or sha
 
 # Todo
 
-- [] Add support for images
+- Add support for images
