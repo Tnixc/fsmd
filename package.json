@@ -20,6 +20,7 @@
     "@vueuse/motion": "^2.0.0",
     "@vueuse/nuxt": "^10.6.1",
     "marked": "^11.0.0",
+    "marked-alert": "^2.0.1",
     "nuxt-icon": "^0.6.6"
   }
 }

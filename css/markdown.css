@@ -1,0 +1,28 @@
+img {
+  @apply rounded-md inline;
+}
+/* code {
+  font-family: "Geist Mono", ui-monospace, SFMono-Regular, Menlo, Monaco,
+    Consolas, "Liberation Mono", "Courier New", monospace;
+} */
+h1:first-of-type {
+  @apply text-5xl font-bold mb-8 mt-0;
+}
+h2 {
+  @apply text-4xl font-bold mt-6 mb-1;
+}
+h3 {
+  @apply text-3xl font-bold mt-6 mb-1;
+}
+h4 {
+  @apply text-2xl font-bold mt-6 mb-1;
+}
+h5 {
+  @apply text-xl font-bold mt-6 mb-1;
+}
+h6 {
+  @apply text-lg font-bold mt-6 mb-1;
+}
+p {
+  @apply my-2;
+}
