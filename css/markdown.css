@@ -43,3 +43,65 @@ ol li {
 ul li {
   @apply list-disc;
 }
+pre {
+  @apply my-4 max-w-full overflow-auto rounded-md bg-gray-300/50 p-4 ring-2 ring-gray-300 dark:bg-gray-800/70 dark:ring-gray-700;
+}
+p code,
+li code {
+  @apply rounded-sm bg-blue-500/20 px-1 text-zinc-900 dark:text-zinc-100;
+}
+pre code {
+  @apply bg-transparent p-0;
+}
+hr {
+  @apply my-8 border-gray-300 dark:border-gray-700;
+}
+a {
+  @apply text-blue-900 underline dark:text-blue-200;
+}
+
+.markdown-alert {
+  @apply my-2 border-l-4 bg-gray-300/50 dark:bg-neutral-700;
+}
+.markdown-alert p {
+  @apply m-0 p-2;
+}
+.markdown-alert-title {
+  @apply flex;
+}
+.markdown-alert-title > :first-child {
+  @apply h-6 w-6 fill-current p-1;
+}
+.markdown-alert-note {
+  @apply border-blue-600 dark:border-blue-300;
+  & .markdown-alert-title {
+    @apply bg-blue-600/20 text-blue-600 dark:bg-blue-300/30 dark:text-blue-300;
+  }
+}
+.markdown-alert-tip {
+  @apply border-lime-600 dark:border-lime-300;
+  & .markdown-alert-title {
+    @apply bg-lime-600/20 text-lime-700 dark:bg-lime-300/30 dark:text-lime-300;
+  }
+}
+.markdown-alert-important {
+  @apply border-fuchsia-600 dark:border-fuchsia-300;
+  & .markdown-alert-title {
+    @apply bg-fuchsia-600/20 text-fuchsia-600 dark:bg-fuchsia-300/30 dark:text-fuchsia-300;
+  }
+}
+.markdown-alert-warning {
+  @apply border-amber-600 dark:border-amber-300;
+  & .markdown-alert-title {
+    @apply bg-amber-600/20 text-amber-600 dark:bg-amber-300/30 dark:text-amber-300;
+  }
+}
+.markdown-alert-caution {
+  @apply border-red-600 dark:border-red-300;
+  & .markdown-alert-title {
+    @apply bg-red-600/20 text-red-600 dark:bg-red-300/30 dark:text-red-300;
+  }
+}
+blockquote {
+  @apply my-4 border-l-4 border-gray-300 bg-slate-200 py-2 pl-4 dark:border-gray-700 dark:bg-slate-900/40;
+}

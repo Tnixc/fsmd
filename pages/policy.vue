@@ -1,7 +1,10 @@
 <script scoped>
 import "@/css/markdown.css";
+import "@/css/code.css";
+
 import hljs from "highlight.js";
 import { markedHighlight } from "marked-highlight";
+import markedFootnote from "marked-footnote";
 import markedAlert from "marked-alert";
 import { Marked } from "marked";
 export default {
@@ -25,77 +28,9 @@ export default {
     )
       .then((res) => res.text())
       .then((res) => {
-        this.content = marked.use(markedAlert()).parse(
-          `
-# Markdown Sample
-
-this is a paragraph
-
-## this is a heading 2
-### this is a heading 3
-#### this is a heading 4
-##### this is a heading 5
-###### this is a heading 6
-
-This is a paragraph with **bold** and *italic* text and an \`inline code block \`.
-
-the following is a seperator:
-
----
-
-this is a paragraph with a [link](link)
-
-This is a list:
-- item 1
-- item 2
-    - subitem 2.1
-       - sub 2.1.1
-- item 3
-
-This is an ordered list:
-1. item 1
-2. item 2
-3. item 3
-
-this is a GFC note
-> [!NOTE]
-> Highlights information that users should take into account, even when skimming.
-
-> [!TIP]
-> Optional information to help a user be more successful.
-
-> [!IMPORTANT]
-> Crucial information necessary for users to succeed.
-
-> [!WARNING]
-> Critical content demanding immediate user attention due to potential risks.
-
-> [!CAUTION]
-> Negative potential consequences of an action.
-
-
-
-
-This is a blockquote:
-> this is a blockquote
-> this is line 2
-
-This is a code block:
-\`\`\`js
-console.log("hello world");
-const x = "hello world";
-console.log(x);
-\`\`\`
-
-heres some more lorem ipsum:
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl eget ultricies ultricies, nunc nisl ultricies nunc, vitae ultricies nisl nisl vitae nisl. Donec euismod, nisl eget ultricies ultricies, nunc nisl ultricies nunc, vitae ultricies nisl nisl vitae nisl. Donec euismod, nisl eget ultricies ultricies, nunc nisl ultricies nunc, vitae ultricies nisl nisl vitae nisl. Donec euismod, nisl eget ultricies ultricies, nunc nisl ultricies nunc, vitae ultricies nisl nisl vitae nisl. Donec euismod, nisl eget ultricies ultricies, nunc nisl ultricies nunc, vitae ultricies nisl nisl vitae nisl. Donec euismod, nisl eget ultricies ultricies, nunc nisl ultricies nunc, vitae ultricies nisl nisl vitae nisl.
-
-
-
-        `,
-          ["gfm", "breaks"],
-        );
+        this.content = marked
+          .use(markedAlert(), markedFootnote())
+          .parse(res, ["gfm", "breaks"]);
       });
   },
 };
