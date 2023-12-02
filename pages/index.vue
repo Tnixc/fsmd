@@ -83,25 +83,6 @@
     </div>
   </div>
 </template>
-<style>
-@font-face {
-  font-family: Geist Mono;
-  font-weight: 100;
-  src: url("https://pham.codes/d/GeistMonoVF.woff2");
-}
-
-@font-face {
-  font-family: Geist;
-  font-weight: 100;
-  src: url("https://pham.codes/d/GeistVF.woff2");
-}
-
-body {
-  font-family: Geist, sans-serif;
-  font-size: 16px;
-  background: black;
-}
-</style>
 <style scoped>
 #int {
   width: calc(100% - 1px);
