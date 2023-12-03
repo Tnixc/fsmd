@@ -37,12 +37,11 @@
         <div
           class="ml-auto mr-0 w-fit translate-y-1/2 bg-gradient-to-b from-teal-300 to-blue-300 p-0.5 text-2xl text-zinc-50 shadow-2xl transition-all hover:shadow-xl lg:hidden"
         >
-          <nuxt-link
+          <button
             class="block h-full w-full whitespace-nowrap bg-slate-950 p-5 px-16 text-center text-blue-100 no-underline"
-            to="/document"
           >
             New Document
-          </nuxt-link>
+          </button>
         </div>
       </div>
       <div class="px-4 pt-20 text-xl text-red-400 lg:pt-4">
@@ -75,12 +74,11 @@
     <div
       class="absolute left-1/2 top-1/2 z-[1000] -translate-x-1/2 -translate-y-1/2 bg-gradient-to-b from-teal-300 to-blue-300 p-0.5 text-2xl text-zinc-50 shadow-2xl transition-all hover:shadow-xl"
     >
-      <nuxt-link
+      <button
         class="block h-full w-full whitespace-pre bg-slate-950 p-5 px-16 text-center text-blue-100 no-underline"
-        to="/document"
       >
         New Document
-      </nuxt-link>
+      </button>
     </div>
   </div>
 </template>
